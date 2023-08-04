@@ -1,0 +1,247 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../../assets/Rajdhani-Medium.ttf);
+  }
+  @font-face {
+    font-family: parafont;
+    src: url(../../assets/Rajdhani-Regular.ttf);
+  }
+.footer{
+    background-color: #fa6220;
+    display: flex;
+}
+.footer_main_container{
+   
+    width: 70vw;
+    height: 450px;
+    background-color: #05052c;
+    border-bottom-right-radius: 120px;
+    color: white;
+    padding: 2rem 3rem 3rem 3rem;
+}
+.footer_main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    border-bottom: 1px solid #797575;
+   
+
+}
+.footer_main_info{
+    width: 50%;
+    font-family: parafont;
+}
+.footer_logo{
+    margin-block: 1rem;
+}
+.footer_main_info p{
+    font-size: 1.2rem;
+}
+.footer_main_info_contacts{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.footer_main_info_contact{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.footer_main_info_contact img{
+    width:35px;
+    height: 35px;
+}
+.footer_link ul{
+    margin-left: 16px;
+    margin-top: 1rem;
+    list-style: none;
+    
+}
+.footer_link h2{
+    font-family: headerfont;
+}
+.footer_link ul li{
+    margin-bottom: 10px;
+    font-family: parafont;
+    position: relative;;
+}
+.footer_link ul li::before{
+    content: '';
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    background: #fa6220;
+    border-radius: 50%;
+}
+.footer_link ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer_copyright{
+    display: flex;
+    justify-content:space-between;
+    gap: 10rem;
+    margin-top: 2rem;
+    margin-inline: 2rem;
+    font-family: subheadfont;
+}
+.footer_socialicons{
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 1rem;
+}
+.footer_subscribe{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+.footer_subscribe form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer_subscribe h2{
+    font-family: headerfont;
+    color: white;
+    font-size: 2rem;
+}
+.footer_subscribe p{
+    color: white;
+    font-family: subheadfont;
+}
+.footer_subscribe input{
+    width: 300px;
+    height: 40px;
+    border-radius: 100px;
+    padding-inline: 20px;
+    border: none;
+}
+.footer_subscribe input:focus{
+    border: none;
+    outline: none;
+}
+.footer_subscribe button{
+    width: 300px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.footer_subscribe button:hover{
+    transition: 0.5s ease-out;
+    background: #31375c;
+    border: none;
+}
+@media screen and (max-width:1200px){
+    .footer_main_container{
+        width: 90vw;
+    }
+    .footer_subscribe input{
+        width: 270px;
+        height: 35px;
+    }
+    .footer_main_info{
+        width: 50%;
+    }
+    .footer_main_info_contacts{
+        gap: 10px;
+    }
+
+
+}
+@media screen and (max-width:1200px){
+    .footer{
+        background-color: #05052c;
+    }
+    .footer_link{
+        display: none;
+    }
+    .footer_main_container{
+        width: 70vw;
+    }
+    .footer_main_info{
+        width: 100%;
+    }
+    .footer_socialicons{
+        display: none;
+    }
+
+}
+@media screen and (max-width:764px){
+    .footer_subscribe input{
+        width: 150px;
+        height: 40px;
+    }
+
+    .footer_subscribe button{
+        width: 150px;
+        height: 40px;
+    }
+    .footer_subscribe h2{
+        font-size: 1.3rem;
+    }
+    .footer_logo{
+        width: 160px;
+    }
+
+}
+@media screen and (max-width:575px){
+    .footer_subscribe input{
+        width: 100%;
+        height: 40px;
+    }
+
+    .footer_subscribe button{
+        width: 100%;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .footer_copyright p{
+        font-size: 10px;
+    }
+    .footer_main_info p{
+        font-size: 12px;
+    }
+    .footer_main_info_contact h3{
+        font-size: 12px;
+    }
+    .footer_main_info_contact img{
+        width: 20px;
+    }
+    .footer_main_container{
+        width: 58vw;
+        padding: 1rem;
+    }
+    .footer_subscribe h2{
+        font-size: 1.1rem;
+    }
+    .footer_subscribe  p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:455px){
+    .footer_main_info_contacts{
+        flex-direction: column;
+    }
+    .footer_main_info p{
+        font-size: 10px;
+    }
+    
+    
+}

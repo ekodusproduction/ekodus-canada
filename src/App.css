@@ -1,0 +1,45 @@
+@font-face {
+  font-family: headerfont;
+  src: url(../assets/Rajdhani-Bold.ttf);
+}
+
+@font-face {
+  font-family: subheadfont;
+  src: url(../assets/Rajdhani-Medium.ttf);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ scroll-behavior: smooth;
+}
+.btn-primary {
+  background: linear-gradient(to right, #fa6220,#ef8b33);
+  border: none;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+  font-family: headerfont;
+  font-size: 1.2rem;
+  width: 200px;
+  height: 63px;
+}
+.btn-primary:hover{
+  background: #31375c;
+}
+@media screen and (max-width:1020px){
+  .btn-primary{
+      width: 170px;
+      height: 53px;
+  }
+
+}
+@media screen and (max-width:470px){
+  .btn-primary{
+      width: 160px;
+      height: 40px;
+      font-size: 1rem;
+  }
+
+}
+

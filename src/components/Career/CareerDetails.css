@@ -1,0 +1,162 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+  }
+.career_details_header{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(#171a33ef,#191c38ef), url(../../assets/banner_image.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+}
+.career_details_header h1{
+    font-family: headerfont;
+    font-size: 2rem;
+}
+.career_details_header p{
+    font-family: subheadfont;
+    font-size: 1rem;
+}
+.career_details_header_loc{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-block: 2rem;
+    background-color: #252a55;
+    padding: 1rem;
+    border-radius: 30px;
+}
+.career_details_body{
+    margin-top: 5rem;
+}
+.career_details_body_head div{
+    display: flex;
+    justify-content: space-around;
+    margin-block: 10px;
+}
+.career_details_body_head{
+    text-align: center;
+    background-color: #252a55;
+    color: white;
+    padding: 10px;
+} 
+.career_details_body_head h2{
+    font-size: 2rem;
+    font-family: headerfont;
+}
+.career_details_body_head p{
+    font-size: 1.2rem;
+    font-family: subheadfont;
+}
+.career_details_body_content{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+.job_desc_head{
+    font-family: headerfont;
+    margin: 4rem 4rem 0rem 4rem;
+}
+.career_body_details{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.career_body_details h3{
+    font-family: headerfont;
+}
+.career_body_details p{
+    font-family: subheadfont;
+}
+
+.career_form{
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: rgb(248, 248, 248);
+}
+.career_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.career_form_content{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.career_form_content label{
+    font-size: 1.1rem;
+    font-family: headerfont;
+    color: rgb(73, 73, 73);
+}
+.career_form_content input{
+    width: 250px;
+    height: 30px;
+    padding-left: 1rem;
+    border: 1px solid #00000056
+
+}
+#gender{
+    width: 250px;
+    height: 30px;
+
+}
+.career_form_content input:focus{
+    outline: none;
+}
+.career_form_content select{
+    height: 30px;
+    width: 60px;
+}
+#resume{
+    border: none;
+
+}
+.contact_no{
+    width: 250px;
+}
+.contact_no input{
+    width: max-content;
+
+}
+.form-submit-btn{
+    align-self: center;
+    margin-top: 2rem;
+}
+.form-submit-btn input{
+    background: linear-gradient(to right, #fa6220,#ef8b33);
+    border: none;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    font-family: headerfont;
+    font-size: 1.2rem;
+    width: 170px;
+    height: 48px;
+}
+
+
+@media screen and (max-width:1020px){
+    .career_details_body_content{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .career_body_details{
+        width: 90vw;
+    }
+}

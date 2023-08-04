@@ -1,0 +1,151 @@
+@font-face {
+    font-family: navfont;
+    src: url(../../assets/Rajdhani-Medium.ttf);
+}
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+  }
+
+.navbar{
+    display: flex;
+    gap: 2rem;
+    align-items:center;
+    position: fixed; 
+    padding-left: 90px;
+    width: 100%;
+    z-index: 99;
+    padding-block: 1rem;
+    font-family: navfont;
+
+}
+.navbar_active{
+    display: flex;
+    gap: 2rem;
+    align-items:center;
+    position: fixed; 
+    padding-left: 90px;
+    width: 100%;
+    z-index: 99;
+    padding-block: 1rem;
+    font-family: navfont;
+    background-color: #21253f;;
+}
+
+
+.menu_icon{
+    width: 50px;
+    height: 50px; 
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+   
+   
+    border-radius: 50%;
+}
+.navbar__logo img{
+    width: 150px;
+}
+.navbar__links ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+.navbar__link a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.navbar__link a:hover{
+    color: #ad3400;
+}
+.navbar__contact{
+    display: flex;
+    gap: 10px;
+    
+   
+}
+.navbar__contact_img{
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s ease-out;
+
+}
+.navbar__contact_text{
+    margin-top: 5px;
+}
+.navbar__contact img{
+    width: 50px;
+    padding: 10px;
+}
+.navbar__contact_img:hover{
+    transform: translateY(-5px)
+}
+.navbar__link a.active{
+    color: #fa6220;
+}
+@media screen and (max-width: 1200px){
+    .navbar__contact{
+        left: 59%
+    }
+    .navbar__links ul{
+        gap: 30px
+    }
+    .navbar__logo img{
+        width: 150px;
+    }
+
+}
+@media screen and (max-width: 1020px){
+    .navbar{
+        width: 100vw;
+        justify-content: space-between;
+        margin-left: 0;
+        padding: 1rem;
+    }
+    .navbar_active{
+        width: 100vw;
+        justify-content: space-between;
+        margin-left: 0;
+        padding: 1rem;
+
+    }
+    .navbar__links{
+        display: none;
+    }
+    .navbar__contact{
+        display: none;
+    }
+    .menu_icon{
+        display: block;
+    }
+    
+    
+}
+@media screen and (max-width: 728px){
+    .menu_icon{
+        right: 15%;
+    }
+}
+@media screen and (max-width: 576px){
+    .menu_icon{
+        right: 18%;
+    }
+}
+@media screen and (max-width: 456px){
+    .navbar__logo img{
+        width: 170px;
+    }
+    .menu_icon{
+        right: 23%;
+    }
+}

@@ -1,0 +1,215 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+  }
+.service_details_header{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(#171a33ef,#191c38ef), url(../../assets/banner_image.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+}
+.service_details_header h1{
+    font-family: headerfont;
+    font-size: 2rem;
+}
+.service_details_header p{
+    font-family: subheadfont;
+    font-size: 1rem;
+}
+.service_details_header_loc{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #252a55;
+    padding: 1rem;
+    border-radius: 30px;
+}
+.service_details_body{
+    padding-block: 6rem;
+    background-color: #f7f7f7;
+}
+.service_details_body_head{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.service_details_body_head img{
+    width:800px;
+    height:max-content;
+
+}
+.service_list{
+   width: 25vw;
+    box-shadow: 0 1px 17px 1px #0000000e;
+    padding: 1rem 2rem;
+    background-color: white;
+}
+.service_list h3{
+    margin-bottom: 1rem;
+    font-family: headerfont;
+    font-size: 1.5rem;
+}
+.service_list ul{
+    list-style: none;
+}
+.service_list ul li{
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin-block: 1rem;
+    font-family: subheadfont;
+    display: flex;
+    justify-content: space-between;
+}
+.service_list ul li:hover{
+    background-color: #252a55;
+    color: white;
+
+}
+.service_details_body_content{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-block: 4rem;
+
+}
+.product_img{
+    width: 400px !important;
+}
+.contact_card{
+    background-color: #252a55;
+    width: 25vw;
+    height: 400px;
+    padding: 1rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.contact_card img{
+    width: 200px;
+}
+.contact_now_btn{
+    background: linear-gradient(to right, #fa6220,#ef8b33);
+    border: none;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    font-family: headerfont;
+    font-size: 1.2rem;
+    width: 150px;
+    padding: 1rem;
+    text-decoration: none;
+    
+
+}
+.contact_now_btn:hover{
+    background: #31375c;
+}
+.contact_no{
+    margin-block: 1rem;
+}
+.service_details_body_content_text{
+    width: 800px;
+}
+.service_details_body_content_text h2{
+    font-size: 3rem;
+    font-family: headerfont;
+}
+.service_details_body_content_text p{
+    font-family: subheadfont;
+}
+@media screen and (max-width:1200px){
+    .service_details_body_head img{
+        width:600px;
+        height:max-content;
+    
+    }
+    .service_list{
+       width: 250px;
+    }
+    .service_details_body_head{
+        gap: 2rem;
+    }
+
+}
+@media screen and (max-width:1020px){
+    .service_details_body_head{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .service_details_body_head img{
+        width:90%;
+        height:max-content;
+    
+    }
+    .service_list{
+       width: 250px;
+    }
+    .service_details_body_head{
+        gap: 2rem;
+    }
+    .service_list{
+        width: 300px;
+        align-self: flex-start;
+     }
+     .service_details_body_content_text{
+        width: 60%;
+        margin-top: -600px;
+    }
+
+}
+@media screen and (max-width:1020px){
+    .service_list{
+        width: 250px;
+    
+     }
+
+}
+@media screen and (max-width:1020px){
+    .service_details_body_content_text{
+        width: 100%;
+        margin-top: 0;
+    }
+    .service_list{
+        width: 350px;
+        align-self: center;
+     }
+     .service_details_body_content{
+        flex-direction: column-reverse;
+     }
+     .contact_card{
+        align-self: center;
+        width: 350px;
+     }
+     .service_details_body_content_text{
+        padding: 1rem;
+     }
+     .service_details_body_content_text h2{
+        font-size: 2rem;
+     }
+     .service_details_body{
+        padding-block: 3rem;
+     }
+}
+@media screen and (max-width:576px){
+    .product_img{
+        width: 300px;
+    }
+    .service_details_body_content_text{
+        padding: 10px;
+    }
+}

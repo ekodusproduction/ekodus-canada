@@ -1,0 +1,255 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+  }
+.homeabout{
+    margin-top:5rem ;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom right, #fa6220, #ef8b33);
+    position: relative;
+}
+.homeaboutbackcircle{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+.homeabout_imgcontainer{
+    position: absolute;
+    left: 12%;
+    top: 17%;
+
+}
+.textcircle_homeabout{
+    position: absolute;
+    right: 0;
+    top:-5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #fa6220;
+    border-radius: 50%;
+    border: 4px solid white;
+    color: white;
+    text-align: center;
+}
+.textcircle_homeabout h3{
+    font-family: headerfont;
+    font-size: 3.5rem;
+}
+.textcircle_homeabout p{
+    font-family: subheadfont;
+    font-size: 1.2rem;
+}
+.homeabout_imgmain{
+    width: 520px;
+    border-bottom-left-radius:180px;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+
+}
+.homeabout_imgsub{
+    width: 230px;
+    position: absolute;
+    top: 70%;
+    left: -15%;
+    border-bottom-left-radius:60px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top:8px solid white;
+    border-right:8px solid white;
+}
+.homeabout_right{
+    width: 64vw;
+    height: 120vh;
+    background: linear-gradient(#171a33ef,#191c38ef),url(../assets/banner_image.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 500px;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+.homeabout_right_text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15rem;
+    gap: 0rem;
+    width: 100%;
+}
+.homeabout_right_text_start{
+    font-family: subheadfont;
+    color: #fa6220;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+.homeabout_right_text h2{
+    font-family: headerfont;
+    font-size: 3.5rem;
+    color: white;
+    line-height: 4rem;
+
+}
+.homeabout_right_text_desc{
+    font-family: subheadfont;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+.btn-homeabout{
+    margin-block: 2rem;
+}
+@media screen and (max-width:1216px) {
+    .homeabout_imgmain{
+        width: 460px;
+    }
+    .homeabout_imgcontainer{
+        top: 180px;
+
+    }
+    .header_right_text_start{
+        font-size: 1.3rem;
+    
+    }
+    .header_right_text h2{
+        font-size: 4rem;
+        line-height: 4rem;
+    
+    }
+    .header_right_text_desc{
+        font-size: 1.2rem;
+        line-height: 2.7rem;
+    }
+    
+}
+@media screen and (max-width:1020px){
+    .homeabout_right{
+        width: 100vw;
+        height: 140vh;
+        justify-content: flex-start;
+        
+        
+    }
+    .homeabout_right_text{
+        padding-left: 0rem;
+        text-align: center;
+        align-items: center;
+        padding-top: 5rem;
+    }
+    .homeabout_imgcontainer{
+        top: 490px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .homeabout_imgmain{
+        width: 450px;
+    }
+    .homeabout_imgsub{
+        width: 180px;
+    }
+    .btn-homeabout{
+        margin-top: 1rem;
+    }
+    .header_right_text{
+        margin-top: 4rem;
+        padding-left: 0rem;
+        align-items: center;
+        width: 450px;
+    }
+    .header_right_text_start{
+        font-size: 1rem;
+    
+    }
+    .homeabout_right_text h2{
+        font-size: 3rem;
+        line-height: 2.7rem;
+    
+    }
+    .homeabout_right_text_desc{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .textcircle_homeabout{
+        width: 120px;
+        height: 120px;
+    }
+    .textcircle_homeabout h3{
+        font-size: 2.5rem;
+    }
+    .textcircle_homeabout p{
+        font-size: 1rem;
+    }
+    
+}
+@media screen and (max-width:610px){
+    .homeabout_right{
+        height: 105vh;
+    }
+    .homeabout_imgcontainer{
+        top: 400px;
+    }
+    .homeabout_imgmain{
+        width: 320px;
+    }
+    .homeabout_imgsub{
+        width: 140px;
+        }
+    .homeabout_right_text h2{
+        font-size: 2.2rem;
+        line-height: 2rem;
+    
+    }
+    .homeabout_right_text_desc{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .homeabout_right_text{
+        padding-top: 3rem;
+    }
+    
+}
+@media screen and (max-width:491px){
+    .homeabout{
+        margin-top:1rem ;
+    }
+    .homeabout_right{
+        height: 100vh;
+    }
+   
+    .homeabout_imgcontainer{
+        top: 450px;
+    }
+    .homeabout_imgmain{
+        width: 260px;
+    }  
+    .homeabout_imgsub{
+        width: 100px;
+        }
+    .textcircle_homeabout{
+        width: 100px;
+        height: 100px;
+    }
+    .textcircle_homeabout h3{
+        font-size: 1rem;
+    }
+    .textcircle_homeabout p{
+        font-size: 14px;
+    }
+   
+
+}

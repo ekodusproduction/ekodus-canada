@@ -1,0 +1,166 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+  }
+.homeoffer_card{
+    width:380px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.089);
+    position: relative;
+    margin-block: 1rem;
+    margin-inline: auto;
+
+}
+
+
+.homeoffer_card_imagesection{
+  
+    background-position: center;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    
+}
+.homeoffer_card_imagesection img{
+    width: 100%;
+    height: 320px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.homeoffer_card_textsection{
+    text-align: center;
+    height: 200px;
+    padding: 5rem 1rem 1rem 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.homeoffer_card_textsection h2{
+    font-family: headerfont;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+.homeoffer_card:hover .homeoffer_card_textsection{
+    background-color: rgb(56, 55, 105);
+    color: white;
+}
+.homeoffer_card:hover .homeoffer_card_textsection h2{
+    color: white;
+}
+
+.offericon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(to right, #ff6d2f, #ee8f3c);
+  
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+.offericonimg{
+    width: 50px;
+}
+.offericon img{
+    width: 50px !important;
+}
+.offericon:hover{
+    background: linear-gradient(to right, #ee8f3c, #ff6d2f);
+}
+
+@media screen and (max-width:1300px){
+    .homeoffer_card{
+        width:320px;
+        height: 470px;
+    }
+    .homeoffer_card_imagesection img{
+        width: 320px;
+    }
+    
+}
+@media screen and (max-width:1120px){
+    .homeoffer_card{
+        width:270px;
+        height: 420px;
+    }
+    .homeoffer_card_imagesection img{
+        width: 270px;
+    }
+    .offericon{
+        width: 90px;
+        height: 90px;
+    }
+    
+}
+@media screen and (max-width:1020px){
+    .homeoffer_card{
+        width:360px;
+        height: 480px;
+    }
+    .homeoffer_card_textsection{
+        padding-top: 3.5rem;
+    }
+    .homeoffer_card_imagesection img{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width:796px){
+    .homeoffer_card{
+        width:400px;
+        height: 520px;
+    }
+    .offericon{
+        width: 120px;
+        height:110px;
+    }
+    .homeoffer_card_imagesection img{
+        width: 400px;
+    }
+    .homeoffer_card_textsection{
+        padding-top: 5rem;
+    }
+
+
+}
+
+@media screen and (max-width:470px){
+    .homeoffer_card{
+        width:95vw;
+        height: 420px;
+        margin-block: 10px;
+
+    }
+
+    
+    .homeoffer_card_imagesection img{
+        width: 95vw;
+    }
+    .offericon{
+        width: 90px;
+        height:90px;
+        top: 58%;
+    }
+    .homeoffer_card_textsection{
+        padding-top: 3.5rem;
+    }
+    .homeoffer_card_textsection h2{
+        font-size: 1.1rem;
+    }
+    .homeoffer_card_textsection{
+        height: 30%;
+    }
+    .homeoffer_card_imagesection{
+        height: 70%;
+    }
+}

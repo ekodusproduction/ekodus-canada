@@ -1,0 +1,101 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+  }
+.homeoffer{
+    padding-block: 2rem;
+}
+.offertopback{
+    position: absolute;
+    z-index: -1;
+    width: 90vw;
+}
+.homeoffer_container{
+    padding: 5rem 1rem 1rem 1rem;
+    width: 100%;
+    
+}
+.homeoffer_header{
+    text-align: center;
+    line-height: 4rem;
+}
+.homeoffer_header_start{
+    font-family: subheadfont;
+    color:#fa6220;
+    font-size: 1.7rem;
+}
+.homeoffer_header h2{
+    font-size: 4rem;
+    font-family: headerfont;
+    color: rgb(20, 20, 20);
+}
+.homeoffer_header_info{
+    font-family: subheadfont;
+    font-size: 1.5rem;
+    color: rgb(114, 113, 113);
+}
+.homeoffer_cards{
+    /* margin-left: 7rem; */
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+
+@media screen and (max-width:1020px){
+    .homeoffer{
+        padding-block: 0rem;
+    }
+    .homeoffer_header h2{
+        font-size: 3rem;
+    }
+    .homeoffer_header_start{
+        font-size: 1.7rem;
+    }
+    .homeoffer_header_info{
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+    .homeoffer_header{
+        line-height: 3rem;
+
+    }
+}
+@media screen and (max-width:768px){
+    .homeoffer_header h2{
+        font-size: 2rem;
+    }
+    .homeoffer_header_start{
+        font-size: 1.4rem;
+    }
+    .homeoffer_header_info{
+        font-size: 1.1rem;
+    }
+
+}
+@media screen and (max-width:576px){
+    .homeoffer_container{
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .homeoffer_header h2{
+        font-size: 1.5rem;
+    }
+    .homeoffer_header_start{
+        font-size: 1.2rem;
+    }
+    .homeoffer_header_info{
+        font-size: 1rem;
+    }
+    .homeoffer_header{
+        line-height: 2.2rem;
+    }
+    
+}

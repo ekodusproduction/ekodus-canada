@@ -1,0 +1,92 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+  }
+.project_card{
+    border-radius: 10px;
+    height: 360px;
+    width: 250px;
+    margin-inline: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+
+   
+}
+.project_img{
+    position: absolute;
+    width: 250px;
+    height: 360px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.project_card_overlay{
+    position: absolute;
+    height: 360px;
+    width: 250px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    border-radius: 10px;
+}
+.project_card_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 1rem;
+    z-index: 1;
+
+}
+.project_card button{
+    background: transparent;
+    border: none;
+    cursor: pointer; 
+    margin: 1rem;
+    z-index: 1;
+}
+.project_card h3{
+    font-family: headerfont;
+    font-size: 1.7rem;
+    line-height: 23px;
+
+}
+.project_card p{
+    font-family: subheadfont;
+
+}
+.project_card_starttext{
+    padding: 4px;
+    background-color: rgb(59, 55, 55);
+    border-radius: 20px;
+    font-size: 14px;
+}
+.project_card_content{
+    display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+@media screen and (max-width:576px){
+    .project_card{
+        margin-inline: 0;
+        height: 500px;
+        width: 100%;
+    }
+    .project_img{
+        position: absolute; 
+        height: 500px;
+        width: 100%;
+    }
+    .project_card_overlay{
+        position: absolute;
+        height: 500px;
+        width: 100%;
+    }
+
+}

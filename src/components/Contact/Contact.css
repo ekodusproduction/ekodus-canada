@@ -1,0 +1,155 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+  }
+.contact_page_header_container{
+    background-color: #fa6220;
+}
+.contact_page_header{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(#171a33ef,#191c38ef), url(../../assets/Home/banner_image.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom-right-radius: 600px;
+    color: white;
+
+}
+.contact_page_header h1{
+    font-family: headerfont;
+    font-size: 3rem;
+}
+
+.contact_header_loc{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #252a55;
+    padding: 1rem;
+    border-radius: 30px;
+    font-family: subheadfont;
+}
+.contact_page_body{
+    display: flex;
+    gap: 1rem;
+    background-color: #f8f7f7;
+    padding-block: 5rem;
+    justify-content: space-around;
+}
+
+.contact_page_location_header h2{
+    font-family: headerfont;
+    font-size: 3rem;
+}
+.contact_page_location_header p{
+    color: #fa6220;
+    font-family: subheadfont;
+    font-size: 1.5rem;
+
+}
+.contact_address{
+    width: 400px;
+    background-color: white;
+    margin: 2rem 1rem;
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    align-items: center;
+    border-radius: 10px;
+}
+.contact_address_info h3{
+    font-family: headerfont;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.contact_address_info p{
+    font-family: subheadfont;
+}
+.contact_page_form{
+    padding: 3rem;
+    background: linear-gradient(to right bottom, #fa6220,#ff9036);
+    border-radius: 20px;
+    color: white;
+}
+.contact_page_form h2{
+    font-family: headerfont;
+    font-size: 3rem;
+}
+.contact_page_form p{
+    font-family: subheadfont;
+    font-size: 1.5rem;
+}
+.contact_page_form form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact_page_form form input{
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 1rem;
+}
+.contact_page_form form button{
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+
+}
+.contact_page_form form textarea{
+    border-radius: 30px;
+    padding: 1rem;
+
+}
+@media screen and (max-width:1100px){
+    .contact_page_body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact_addresses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_page_location{
+        text-align: center;
+    }
+    
+
+
+}
+@media screen and (max-width:660px){
+    .contact_page_form{
+        width: 95%;
+    }
+    .contact_page_location{
+        width: 95%;
+    }
+    .contact_page_header h1{
+        font-size: 3rem;
+    }
+    .contact_page_header p{
+        font-size: 1rem;
+    }
+    .contact_address{
+        width: 300px;
+    }
+    
+    
+
+
+}

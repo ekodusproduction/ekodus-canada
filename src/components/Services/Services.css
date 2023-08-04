@@ -1,0 +1,168 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+  }
+.services_page{
+    background-color: #fcfcfc;
+
+}
+.service_page_header_container{
+    background-color: #fa6220;
+}
+.service_page_header{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(#171a33ef,#191c38ef), url(../../assets/Home/banner_image.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom-right-radius: 600px;
+    color: white;
+
+}
+.service_page_header h1{
+    font-family: headerfont;
+    font-size: 3rem;
+}
+.service_header_loc{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #252a55;
+    padding: 1rem;
+    border-radius: 30px;
+    font-family: subheadfont;
+}
+.service_content{
+    margin-block: 6rem 0;
+    margin-left: 5rem;
+}
+.service_content h2{
+    margin-block: 4rem ;
+    text-align: center;
+    font-size: 3rem;
+    font-family: headerfont;
+    color: #363636;
+    display: flex;
+    width: 60vw;
+    flex-direction: column;
+    margin-inline: auto;
+    
+}
+.services_container{
+    display: flex;
+    flex-wrap: wrap;
+   gap: 3rem;
+   padding: 4rem 2rem;
+   margin-bottom: 2rem;
+   margin-inline: auto;
+}
+.service{
+    width: 350px;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    transition: 0.3s ease-out;
+
+}
+.service:hover{
+    background-color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 17px 4px #00000010;
+}
+.service_icon{
+    align-self:flex-start;
+    width: 200px;
+   
+}
+.service_text{
+    align-self:flex-start;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 2rem;
+    
+
+}
+.service_text h3{
+    font-size: 1.4rem;
+    font-family: headerfont
+}
+.service_text span{
+    font-size: 1.2rem;
+    font-family: subheadfont;
+    color: #3d3d3d;
+    
+}
+.service_prefooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100vh;
+    background: linear-gradient(#00000054,#00000044) ,url(../../assets/servicebanner_img.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+
+}
+.service_prefooter h2{
+    font-size: 3rem;
+    font-family: headerfont;
+}
+.service_prefooter h3{
+    font-size: 1.5rem;
+    font-family: subheadfont;
+    color: #e9e9e9;
+}
+
+@media screen and (max-width:900px) {
+    .service_page_header h1{
+        font-size: 3rem;
+    }
+    .service_page_header p{
+        font-size: 1rem;
+    }
+    .service_content h2{
+        font-size: 2rem;
+    }
+    .service_content h2{
+        margin-block: 1rem ;
+        padding-inline: 1rem;
+        width: 100vw;
+        font-size: 1.5rem;
+    }
+    .services_container{
+        justify-content: center;
+        
+    }
+    .service_content{
+        margin-left: 0;
+    }
+    .service{
+        width: 250px;
+    }
+    .services_container{
+       padding: 3rem 2rem;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .service{
+        width: 330px;
+    }
+
+}

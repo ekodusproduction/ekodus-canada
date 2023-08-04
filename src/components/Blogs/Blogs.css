@@ -1,0 +1,77 @@
+@font-face {
+    font-family: headerfont;
+    src: url(../../assets/Rajdhani-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: subheadfont;
+    src: url(../assets/Rajdhani-Medium.ttf);
+  }
+.blogs{
+    text-align: center;
+    position: relative;
+    margin-top: 4rem;
+}
+.blogstopplayer{
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    width: 90vw;
+    z-index: -1;
+}
+.blogs_header{
+    margin-bottom: 3rem;
+    padding-inline: 10px;
+}
+.blogs_header_start{
+    color: #fa6220;
+    font-family: subheadfont;
+    font-size: 1.5rem;
+
+}
+.blogs_header h2{
+    font-family: headerfont;
+    font-size: 4rem;
+}
+.blogs_header_desc{
+    font-family: subheadfont;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.705);
+
+}
+.blog_slider_container{
+    padding-bottom: 3rem;
+}
+.noblogsmsg{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: subheadfont;
+    margin-bottom: 5rem;
+    color: rgb(75, 75, 75);
+}
+
+/* .blogs_content{
+    margin-inline: 3rem;
+}
+*/
+ @media screen and (max-width:1020px){
+    /* .blogs_content{
+        margin-inline: 1rem;
+    }  */
+    .blogs{
+        height: 100vh;
+    }
+    .blogs_header h2{
+        font-size: 1.5rem;
+    }
+    .blogs_header_start{
+        font-size: 1.2rem;
+    }
+    .blogs_header_desc{
+        font-size: 1rem;
+    }
+    .blogstopplayer{
+        position: absolute;
+        top: -5%;
+    }
+} 
